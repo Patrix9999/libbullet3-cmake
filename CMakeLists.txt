@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.15)
 unset(PROJECT_IS_TOPLEVEL)
 
 project(libbullet3
-	VERSION 3.1.7
+	VERSION 3.2.5
 	DESCRIPTION "C++ library portion of bullet"
 	LANGUAGES CXX
 )
@@ -26,7 +26,7 @@ option(LIBBULLET3_BUILD_SHARED "Build libbullet3 as a shared library" ${BUILD_SH
 include(FetchContent)
 FetchContent_Declare(bullet
 	GIT_REPOSITORY https://github.com/bulletphysics/bullet3.git
-	GIT_TAG ebe1916b90acae8b13cd8c6b637d8327cdc64e94 # 3.1.7
+	GIT_TAG 3.25
 )
 FetchContent_Populate(bullet)
 
